@@ -45,11 +45,3 @@ This project is a simple yet effective solution for harvesting data from YouTube
 ## Contributions
 
 Contributions are welcome! Whether you want to enhance the data harvesting capabilities, improve the warehousing structure, or add additional features, feel free to submit pull requests.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-Feel free to customize the description based on your project's specific details and requirements. Additionally, include relevant documentation, usage examples, and installation instructions in your GitHub repository.
