@@ -41,7 +41,3 @@ This project is a simple yet effective solution for harvesting data from YouTube
 4. **Run Data Harvesting Script:** Execute the data harvesting script to fetch YouTube data and populate the database.
 
 5. **(Optional) Build and Run API:** If using Flask for API, build and run the API server to allow users to retrieve data.
-
-## Contributions
-
-Contributions are welcome! Whether you want to enhance the data harvesting capabilities, improve the warehousing structure, or add additional features, feel free to submit pull requests.
