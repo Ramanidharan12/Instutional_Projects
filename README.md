@@ -4,6 +4,8 @@
 
 This project is a simple yet effective solution for harvesting data from YouTube and storing it in a centralized warehouse for analysis, reporting, or further processing. The YouTube API is utilized for extracting relevant information from videos, channels, and playlists, and the data is then stored in a database for easy access and retrieval.
 
+## Approach
+
 PYTHON: Python is a high-level programming language that is designed to improve the readability of code. Python is the primary programming language used in the project for retrieving, transferring, and analyzing data.
 
 GOOGLE API: The Google API Client Library for Python is designed for Python client-application developers and offers simple and flexible access to many Google APIs.The Google API v3 is the primary library that is used to retrieve data such as playlists, comments, and videos from YouTube channels.
@@ -14,7 +16,7 @@ POSTGRESQL: PostgreSQL is an advanced relational database system. It supports bo
 
 Streamlit: Streamlit turns data scripts into shareable web apps in minutes. All in pure Python. It is the primary web application used in the project. It is the Python library which can be installed in Python.
 
-REQUIRED LIBRARIES:
+## REQUIRED LIBRARIES:
 
 1.googleapiclient.discovery
 
@@ -26,9 +28,7 @@ REQUIRED LIBRARIES:
 
 5.pandas
 
-Feature of the project:
+## Feature of the project:
 
-By getting the channel ID input from the user the YouTube channel data will be retrieved. Data such as Playlists,Comments,Videos and channel details.
-Store channel data in MongoDB.
-Transfering data from MongoDB to SQL
-Sorting data according to usercase thru streamlit using a pre-set search option.
+This project approach involves building a simple UI with Streamlit, retrieving data from the YouTube API, storing it in a MongoDB data lake, migrating it to a SQL data warehouse, querying the data warehouse with SQL, and displaying the data in the Streamlit app.
+
