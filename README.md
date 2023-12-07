@@ -1,43 +1,34 @@
-Certainly! Below is a simple project description for a YouTube data harvesting and warehousing project. This description assumes you're using Python and tools like YouTube API for data harvesting and a database for warehousing.
-
----
-
 # YouTube Data Harvesting and Warehousing
 
 ## Overview
 
 This project is a simple yet effective solution for harvesting data from YouTube and storing it in a centralized warehouse for analysis, reporting, or further processing. The YouTube API is utilized for extracting relevant information from videos, channels, and playlists, and the data is then stored in a database for easy access and retrieval.
 
-## Features
+PYTHON: Python is a high-level programming language that is designed to improve the readability of code. Python is the primary programming language used in the project for retrieving, transferring, and analyzing data.
 
-- **YouTube API Integration:** Leverage the power of the YouTube Data API to fetch data related to videos, channels, and playlists.
+GOOGLE API: The Google API Client Library for Python is designed for Python client-application developers and offers simple and flexible access to many Google APIs.The Google API v3 is the primary library that is used to retrieve data such as playlists, comments, and videos from YouTube channels.
 
-- **Data Harvesting:** Extract key information such as video titles, descriptions, view counts, likes, dislikes, comments, and more.
+MongoDB: MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need which is classified as NoSQL.In the project, it is the primary database to store data which was retrieved from the YouTube channel. It supports JSON format to store data.
 
-- **Data Warehousing:** Utilize a relational database (e.g., MySQL, PostgreSQL) to store and organize the harvested YouTube data efficiently.
+POSTGRESQL: PostgreSQL is an advanced relational database system. It supports both relational (SQL) and non-relational (JSON) queries. In this project, it is the secondary database that gets data from MongoDB.Pre-set queries are created and displayed in web applications for user ease.
 
-- **Scheduled Data Updates:** Implement a scheduled task to regularly update the database with fresh data from YouTube, ensuring the information is always up-to-date.
+Streamlit: Streamlit turns data scripts into shareable web apps in minutes. All in pure Python. It is the primary web application used in the project. It is the Python library which can be installed in Python.
 
-- **Data Retrieval API:** Build an API that allows users to query and retrieve specific subsets of the YouTube data from the warehouse.
+REQUIRED LIBRARIES:
 
-## Technologies Used
+1.googleapiclient.discovery
 
-- **Python:** The primary programming language for data harvesting and processing.
+2.streamlet
 
-- **YouTube API:** Access YouTube data programmatically for harvesting relevant information.
+3.psycopg2
 
-- **Database:** Choose a relational database for warehousing YouTube data.
+4.pymongo
 
-- **Flask (Optional):** Create a simple API for data retrieval.
+5.pandas
 
-## Getting Started
+Feature of the project:
 
-1. **Set up API Key:** Obtain a YouTube API key to authenticate requests to the YouTube Data API.
-
-2. **Install Dependencies:** Install the required Python libraries using `pip install -r requirements.txt`.
-
-3. **Configure Database:** Set up the database and update the configuration file with database connection details.
-
-4. **Run Data Harvesting Script:** Execute the data harvesting script to fetch YouTube data and populate the database.
-
-5. **(Optional) Build and Run API:** If using Flask for API, build and run the API server to allow users to retrieve data.
+By getting the channel ID input from the user the YouTube channel data will be retrieved. Data such as Playlists,Comments,Videos and channel details.
+Store channel data in MongoDB.
+Transfering data from MongoDB to SQL
+Sorting data according to usercase thru streamlit using a pre-set search option.
