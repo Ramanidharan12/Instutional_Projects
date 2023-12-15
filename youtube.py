@@ -473,7 +473,7 @@ def show_comments_tables():
             com_list.append(com_data['comment_information'][i])
     df3=st.dataframe(com_list)
     return df3
-
+st.set_page_config(layout="wide")  
 # stream lit 
 st.title(":red[YouTube Data Harvesting and Warehousing]")
 with st.sidebar:
